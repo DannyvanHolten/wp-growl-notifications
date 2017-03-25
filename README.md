@@ -13,7 +13,7 @@ If you notice any abuse or want to get involved visit the [WP Growl GitHub Repos
 
 The plugin is available from the [WordPress plugin repository](http://www.wordpress.org/plugins/wp-growl-notifications)
 
-1. Upload the plugin files to the `/wp-content/plugins/plugin-name` directory, or install the plugin through the WordPress plugins screen directly.
+1. Upload the plugin files to the `/wp-content/plugins/wp-growl-notifications` directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress
 3. Use the Settings->Plugin Name screen to configure the plugin
 4. (Make your instructions match the desired user flow for activating and installing your plugin. Include any steps that might be needed for explanatory purposes)
