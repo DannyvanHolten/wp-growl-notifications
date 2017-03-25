@@ -22,14 +22,14 @@ class WPGrowl
 
 	public function loadStyles()
 	{
-		wp_enqueue_script('jquery-initialize', ENHANCED_WP_ADMIN_ASSETS . 'js/jquery-initialize.min.js', ['jquery'],
-			ENHANCED_WP_ADMIN_VERSION, true);
+		wp_enqueue_script('jquery-initialize', WP_GROWL_ASSETS . 'js/jquery-initialize.min.js', ['jquery'],
+			WP_GROWL_VERSION, true);
 
-		wp_enqueue_style('growl-css', ENHANCED_WP_ADMIN_ASSETS . 'css/growl.min.css', false,
-			ENHANCED_WP_ADMIN_VERSION);
+		wp_enqueue_style('growl-css', WP_GROWL_ASSETS . 'css/growl.min.css', false,
+			WP_GROWL_VERSION);
 
-		wp_register_script('growl-js', ENHANCED_WP_ADMIN_ASSETS . 'js/growl.min.js', ['jquery', 'jquery-initialize'],
-			ENHANCED_WP_ADMIN_VERSION, true);
+		wp_register_script('growl-js', WP_GROWL_ASSETS . 'js/growl.min.js', ['jquery', 'jquery-initialize'],
+			WP_GROWL_VERSION, true);
 
 		wp_localize_script('growl-js', 'growlL10n', $this->growlTranslations());
 		wp_localize_script('growl-js', 'growl_snoozed_notices', $this->snoozedNotices());
