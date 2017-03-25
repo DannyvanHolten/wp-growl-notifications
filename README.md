@@ -20,11 +20,11 @@ The plugin is available from the [WordPress plugin repository](http://www.wordpr
 
 You can also install WP Growl trough composer
 
-`composer require dannyvanholten/wp-growl`
+`composer require dannyvanholten/wp-growl-notifications`
 
 or if you make use of WPackagist
 
-`composer require wpackagist/wp-growl`
+`composer require wpackagist/wp-growl-notifications`
 
 ## Getting involved
 
