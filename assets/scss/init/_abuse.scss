@@ -1,0 +1,5 @@
+// WPMU-DEV is abusing the admin notices for advertisements
+.frash-notice,
+.smush-notice {
+	display: none !important;
+}

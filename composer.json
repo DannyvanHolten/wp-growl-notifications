@@ -1,6 +1,6 @@
 {
   "name": "dannyvanholten/wp-growl",
-  "description": "Show your WordPress admin notices in a better way, and snooze them whenever you see fit.",
+  "description": "Show your WordPress admin notices in a growlike / better way, and snooze them whenever you see fit.",
   "type": "wordpress-plugin",
   "license": "GPL-3.0+",
   "authors": [
