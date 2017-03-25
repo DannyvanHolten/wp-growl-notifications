@@ -1,0 +1,30 @@
+// Grey colors
+$white: #fff;
+$light-gray: #f5f5f5;
+$medium-gray: #ddd;
+$dark-gray: #32373c;
+$black: #111;
+
+// Succes colors
+$success-color: #46b450;
+$success-color-light: lighten($success-color, 1%);
+$success-color-medium: darken($success-color, 7%);
+$success-color-dark: darken($success-color, 10%);
+
+// Error colors
+$error-color: #f55e4f;
+$error-color-dark: #dd4232;
+
+// Warning colors
+$warning-color: #ffc837;
+$warning-color-dark: #ffb900;
+
+// Info colors
+$info-color: #20b8e8;
+$info-color-dark: #00a0d2;
+
+// Transition curves
+$curve-standard: cubic-bezier(.4, .0, .2, 1);
+$curve-deceleration: cubic-bezier(.0, .0, .2, 1);
+$curve-acceleration: cubic-bezier(.4, .0, 1, 1);
+$curve-sharp: cubic-bezier(.4, .0, .6, 1);

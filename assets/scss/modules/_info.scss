@@ -1,0 +1,11 @@
+.notice-info {
+	border-color: $info-color-dark;
+	background-color: $info-color;
+
+	.notice-dismiss,
+	.acf-icon.-cancel {
+		&:after {
+			background-color: $info-color-dark;
+		}
+	}
+}

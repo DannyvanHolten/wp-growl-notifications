@@ -1,0 +1,44 @@
+.notice-dismiss,
+.acf-icon.-cancel {
+	position: absolute;
+	top: 5px;
+	right: -30px;
+
+	box-sizing: border-box;
+	width: 20px;
+	height: 20px;
+	padding: 15px !important;
+
+	outline: none !important;
+	background: transparent !important;
+	box-shadow: none !important;
+
+	&:before {
+		content: '\f335';
+		position: absolute;
+		z-index: 1;
+		top: 50%;
+		left: 50%;
+
+		display: block;
+		width: 20px;
+		height: 20px;
+
+		font: normal 16px/20px dashicons;
+		-webkit-font-smoothing: antialiased;
+		color: $white;
+
+		text-align: center;
+
+		transition: color .15s $curve-standard;
+		transform: translate(-50%, -50%);
+
+		speak: none;
+	}
+
+	&:hover:before,
+	&:active:before,
+	&:focus:before {
+		color: $white !important;
+	}
+}
