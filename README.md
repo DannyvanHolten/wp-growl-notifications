@@ -1,9 +1,23 @@
 # WP Growl
 Show your WordPress admin notices in a growlike / better way, and snooze them whenever you see fit.
 
+This WordPress plug-in aims to make admin notices more colorful and noticable so they are really an addition to your admin. 
+
+In addition to making them more noticable WP Growl also makes it possible to snooze notices for you so you can really keep focus on the work you should do now.
+
+And last but not least, WP Growl is here to fight those annoying notices being abused for advertising! We try to hide any notices being used by plug-ins. 
+
+If you notice any abuse or want to get involved visit the [WP Growl GitHub Repository.]https://github.com/DannyvanHolten/wp-growl
+
 ## Getting started
 
-The plugin is available from the wordpress repo at link
+The plugin is available from the [WordPress plugin repository]http://www.wordpress.org/plugins/wp-growl
+
+1. Upload the plugin files to the `/wp-content/plugins/plugin-name` directory, or install the plugin through the WordPress plugins screen directly.
+2. Activate the plugin through the 'Plugins' screen in WordPress
+3. Use the Settings->Plugin Name screen to configure the plugin
+4. (Make your instructions match the desired user flow for activating and installing your plugin. Include any steps that might be needed for explanatory purposes)
+
 You can also install WP Growl trough composer
 
 `composer require dannyvanholten/wp-growl`
@@ -14,7 +28,7 @@ or if you make use of WPackagist
 
 ## Getting involved
 
-Want to get involved and improve WP Growl? Fork this repo and whenever you have something just make a pull request. After review we might add it to this repo.
+Want to get involved and improve WP Growl? Fork this repo and whenever you have something just make a pull request. After review we might add it to the [WP Growl GitHub Repository.]https://github.com/DannyvanHolten/wp-growl
 
 We know there's probably still a couple of plug-ins not compatible with WP Growl. And we would love to hear so if that's the case.
 
@@ -26,7 +40,9 @@ If 3rd partys wrongly use these notifications we ask you to notify them on their
 
 As WordPress & WP Growl are continuously in development we like to take a look ahead together for what's coming. If you want to get involved developing WP Growl you can ask us if you can implement some of the features yourself.
 
-* Add a button to your profile page to reset snoozed notices.
-* Add support for WP Rocket
-* Add support for W3 Total Cache
-* Improve support for WPML
+- [ ] Make the snooze menu translatable
+- [ ] Add a button to your profile page to reset snoozed notices.
+- [ ] Add screenshots for the WordPress repository
+- [ ] Add support for WP Rocket
+- [ ] Add support for W3 Total Cache
+- [ ] Improve support for WPML
