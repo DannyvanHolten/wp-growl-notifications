@@ -5,9 +5,6 @@ assets/ export-ignore
 
 composer.json export-ignore
 composer.lock export-ignore
-vendor/composer/installers export-ignore
-vendor/composer/installed.json export-ignore
-vendor/composer/LICENSE export-ignore
 
 Gruntfile.js export-ignore
 package.json export-ignore
