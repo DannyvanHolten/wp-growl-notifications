@@ -26,7 +26,7 @@ If 3rd partys wrongly use these notifications we ask you to notify them on their
 
 As WordPress & WP Growl are continuously in development we like to take a look ahead together for what's coming. If you want to get involved developing WP Growl you can ask us if you can implement some of the features yourself.
 
-- Add a button to your profile page to reset snoozed notices.
-- Add support for WP Rocket
-- Add support for W3 Total Cache
-- Improve support for WPML
+* Add a button to your profile page to reset snoozed notices.
+* Add support for WP Rocket
+* Add support for W3 Total Cache
+* Improve support for WPML
