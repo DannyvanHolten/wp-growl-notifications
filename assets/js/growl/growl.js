@@ -79,10 +79,10 @@
 
 			$this.append('<button class="notice-snooze notice-dismiss"></button>');
 			$this.append('<ul class="notice-snooze-menu hidden">' +
-				'<li data-hours="1">Remind me in 1 Hour</li>' +
-				'<li data-hours="24">Remind me in 1 Day</li>' +
-				'<li data-hours="168">Remind me in 1 Week</li>' +
-				'<li data-hours="8760">Ignore this message</li>' +
+				'<li data-hours="1">' + growlL10n.hour + '</li>' +
+				'<li data-hours="24">' + growlL10n.day + '</li>' +
+				'<li data-hours="168">' + growlL10n.week + '</li>' +
+				'<li data-hours="8760">' + growlL10n.year + '</li>' +
 				'</ul>');
 		}
 

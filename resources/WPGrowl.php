@@ -31,6 +31,7 @@ class WPGrowl
 		wp_register_script('growl-js', ENHANCED_WP_ADMIN_ASSETS . 'js/growl.min.js', ['jquery', 'jquery-initialize'],
 			ENHANCED_WP_ADMIN_VERSION, true);
 
+		wp_localize_script('growl-js', 'growlL10n', $this->growlTranslations());
 		wp_localize_script('growl-js', 'growl_snoozed_notices', $this->snoozedNotices());
 		wp_enqueue_script('growl-js');
 	}
@@ -85,5 +86,14 @@ class WPGrowl
 			]
 		)
 		);
+	}
+
+	public function growlTranslations() {
+		return [
+			'hour' => __('Remind me in 1 Hour', 'wp-growl'),
+			'day' => __('Remind me tomorrow', 'wp-growl'),
+			'week' => __('Remind me in 1 week', 'wp-growl'),
+			'year' => __('Ignore this notification', 'wp-growl')
+		];
 	}
 }
