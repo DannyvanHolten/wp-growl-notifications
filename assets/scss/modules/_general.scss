@@ -15,7 +15,9 @@
 	div.message,
 	div.updated,
 	div.error {
-		display: block;
+		&:not(.inline) {
+			display: block;
+		}
 	}
 }
 
