@@ -131,6 +131,15 @@ module.exports = function (grunt)
 				]
 			}
 		},
+		wp_deploy: {
+			deploy: {
+				options: {
+					plugin_slug: 'wp-growl-notifications',
+					build_dir: './', //relative path to your build directory
+					assets_dir: 'assets' //relative path to your assets directory (optional).
+				}
+			}
+		},
 		watch: {
 			options: {
 				livereload: true
@@ -160,7 +169,7 @@ module.exports = function (grunt)
 
 	grunt.registerTask('optimize', ['postcss:sass', 'uglify']);
 
-	grunt.registerTask('build', ['sass', 'postcss:css', 'merge_media', 'uglify', 'copy']);
+	grunt.registerTask('deploy', ['wp_deploy']);
 
 	// Load all the npm tasks which starts with "grunt-"
 	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
