@@ -5,6 +5,7 @@ module.exports = function (grunt)
 
 	grunt.config.init({
 		dir: {
+			build: 'build',
 			assets: 'assets',
 			images: 'images',
 			scss: 'scss',
@@ -119,23 +120,11 @@ module.exports = function (grunt)
 				dest: "<%= dir.css %>/growl.min.css"
 			}
 		},
-		copy: {
-			main: {
-				files: [
-					{
-						expand: true,
-						cwd: '<%= dir.images %>',
-						src: '**',
-						dest: '<%= dir.images %>'
-					}
-				]
-			}
-		},
 		wp_deploy: {
 			deploy: {
 				options: {
 					plugin_slug: 'wp-growl-notifications',
-					build_dir: './', //relative path to your build directory
+					build_dir: 'build/', //relative path to your build directory
 					assets_dir: 'assets' //relative path to your assets directory (optional).
 				}
 			}
