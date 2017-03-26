@@ -37,7 +37,7 @@ You can also install WP Growl trough composer
 
 or if you make use of WPackagist
 
-`composer require wpackagist/wp-growl-notifications`
+`composer require wpackagist-plugin/wp-growl-notifications`
 
 == Frequently Asked Questions ==
 
