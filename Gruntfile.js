@@ -124,7 +124,7 @@ module.exports = function (grunt)
 			deploy: {
 				options: {
 					plugin_slug: 'wp-growl-notifications',
-					build_dir: 'build/', //relative path to your build directory
+					build_dir: 'build', //relative path to your build directory
 					assets_dir: 'assets' //relative path to your assets directory (optional).
 				}
 			}

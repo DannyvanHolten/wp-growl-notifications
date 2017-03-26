@@ -33,9 +33,11 @@ The plugin is available from the [WordPress plugin repository]http://www.wordpre
 
 You can also install WP Growl trough composer
 
-`composer require dannyvanholten/wp-growl`
+`composer require dannyvanholten/wp-growl-notifications`
 
 or if you make use of WPackagist
+
+`composer require wpackagist/wp-growl-notifications`
 
 == Frequently Asked Questions ==
 
