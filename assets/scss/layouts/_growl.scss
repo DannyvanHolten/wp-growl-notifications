@@ -1,0 +1,22 @@
+.growl {
+	position: fixed;
+	z-index: 201;
+	top: 57px;
+	right: 25px;
+
+	width: 280px;
+
+	pointer-events: none;
+
+	.notice,
+	.acf-error-message,
+	#update-nag,
+	.update-nag,
+	div.message,
+	div.updated,
+	div.error {
+		&:not(.inline) {
+			display: block;
+		}
+	}
+}
