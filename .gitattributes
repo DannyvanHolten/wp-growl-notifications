@@ -1,4 +1,5 @@
-assets/ export-ignore
+scss/ export-ignore
+js/**/ export-ignore
 
 .csscomb.json export-ignore
 .postcss-sorting.json export-ignore

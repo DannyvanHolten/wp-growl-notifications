@@ -6,19 +6,20 @@ module.exports = function (grunt)
 	grunt.config.init({
 		dir: {
 			assets: 'assets',
-			dist: 'dist',
+			images: 'images',
+			scss: 'scss',
+			css: 'css',
+			js: 'js',
 			resources: 'resources'
 		},
 
 		url: {
 			content: '/content',
-			themes: '<%= url.content %>/themes',
-			theme: '<%= url.themes %>/<%= theme %>'
 		},
 
 		js: {
 			plugins: [
-				'<%= dir.assets %>/**/*.js'
+				'<%= dir.js %>/**/*.js'
 			]
 		},
 
@@ -35,26 +36,22 @@ module.exports = function (grunt)
 				files: [
 					{
 						expand: true,
-						cwd: '<%= dir.assets %>/js',
+						cwd: '<%= dir.js %>',
 						src: ['*.js', '!*.min.js'],
-						dest: '<%= dir.dist %>/js',
+						dest: '<%= dir.js %>',
 						ext: '.min.js'
 					}
 				]
 			},
 			dist: {
 				files: {
-					'<%= dir.dist %>/js/general.min.js': [
-						'<%= dir.assets %>/js/general/*.js',
-						'!<%= dir.assets %>/js/general/*.min.js'
+					'<%= dir.js %>/growl.min.js': [
+						'<%= dir.js %>/growl/*.js',
+						'!<%= dir.js %>/growl/*.min.js'
 					],
-					'<%= dir.dist %>/js/growl.min.js': [
-						'<%= dir.assets %>/js/growl/*.js',
-						'!<%= dir.assets %>/js/growl/*.min.js'
-					],
-					'<%= dir.dist %>/js/jquery-initialize.min.js': [
-						'<%= dir.assets %>/js/jquery-initialize/*.js',
-						'!<%= dir.assets %>/js/jquery-initialize/*.min.js'
+					'<%= dir.js %>/jquery-initialize.min.js': [
+						'<%= dir.js %>/jquery-initialize/*.js',
+						'!<%= dir.js %>/jquery-initialize/*.min.js'
 					]
 				}
 			}
@@ -64,9 +61,9 @@ module.exports = function (grunt)
 				files: [
 					{
 						expand: true,
-						cwd: "<%= dir.assets %>/scss",
+						cwd: "<%= dir.scss %>",
 						src: ["**/*.scss"],
-						dest: "<%= dir.dist %>/css",
+						dest: "<%= dir.css %>",
 						ext: '.min.css'
 					}
 				],
@@ -87,7 +84,7 @@ module.exports = function (grunt)
 						require('csswring')
 					]
 				},
-				src: "<%= dir.dist %>/css/**/*.css"
+				src: "<%= dir.css %>/**/*.css"
 			},
 			sass: {
 				options: {
@@ -98,7 +95,7 @@ module.exports = function (grunt)
 						)
 					]
 				},
-				src: "<%= dir.assets %>/scss/**/*.scss"
+				src: "<%= dir.scss %>/**/*.scss"
 			}
 		},
 		csscomb: {
@@ -107,9 +104,9 @@ module.exports = function (grunt)
 			},
 			dynamic_mappings: {
 				expand: true,
-				cwd: '<%= dir.assets %>/scss/',
+				cwd: '<%= dir.scss %>/',
 				src: ['**/*.scss'],
-				dest: '<%= dir.assets %>/scss/',
+				dest: '<%= dir.scss %>/',
 				ext: '.scss'
 			}
 		},
@@ -118,8 +115,8 @@ module.exports = function (grunt)
 				compress: true
 			},
 			files: {
-				src: "<%= dir.dist %>/css/style.min.css",
-				dest: "<%= dir.dist %>/css/style.min.css"
+				src: "<%= dir.css %>/growl.min.css",
+				dest: "<%= dir.css %>/growl.min.css"
 			}
 		},
 		copy: {
@@ -127,9 +124,9 @@ module.exports = function (grunt)
 				files: [
 					{
 						expand: true,
-						cwd: '<%= dir.assets %>/images',
+						cwd: '<%= dir.images %>',
 						src: '**',
-						dest: '<%= dir.dist %>/images/'
+						dest: '<%= dir.images %>'
 					}
 				]
 			}
@@ -141,8 +138,7 @@ module.exports = function (grunt)
 
 			sass: {
 				files: [
-					'<%= dir.assets %>/scss/**/*.{scss,sass}',
-					'<%= dir.assetsadmin %>/scss/**/*.{scss,sass}'
+					'<%= dir.scss %>/**/*.{scss,sass}',
 				],
 				tasks: ['sass', 'postcss:css']
 			},
