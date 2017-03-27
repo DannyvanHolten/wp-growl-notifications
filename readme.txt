@@ -43,6 +43,10 @@ or if you make use of WPackagist
 
 == Screenshots ==
 
+1. A non-dismissable message like this one from Yoast is now snoozable trough the eye icon.
+2. You can select how long you would like to snooze this message.
+3. Dismissble message are now more prominent in color, and auto dissappear after 6 seconds.
+
 == Changelog ==
 
 = 0.9 =
