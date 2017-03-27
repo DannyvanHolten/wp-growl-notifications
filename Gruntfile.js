@@ -6,7 +6,6 @@ module.exports = function (grunt)
 	grunt.config.init({
 		dir: {
 			assets: 'assets',
-			assets: 'assets',
 			images: 'images',
 			scss: 'scss',
 			css: 'css',
@@ -15,7 +14,7 @@ module.exports = function (grunt)
 		},
 
 		url: {
-			content: '/content',
+			content: '/content'
 		},
 
 		js: {
