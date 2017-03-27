@@ -29,7 +29,7 @@ class WPGrowl
 	private function growlTranslations()
 	{
 		return [
-			'hour' => __('Remind me in an Hour', WP_GROWL_TEXTDOMAIN),
+			'hour' => __('Remind me in an hour', WP_GROWL_TEXTDOMAIN),
 			'day'  => __('Remind me tomorrow', WP_GROWL_TEXTDOMAIN),
 			'week' => __('Remind me next week', WP_GROWL_TEXTDOMAIN),
 			'year' => __('Ignore this message', WP_GROWL_TEXTDOMAIN)
