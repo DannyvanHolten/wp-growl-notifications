@@ -14,7 +14,10 @@ if (!defined('ABSPATH')) {
 } // Exit if accessed directly
 
 // Define multiple necessary constants
-define('WP_GROWL_VERSION', 0.1);
+define('WP_GROWL_VERSION', 0.9);
+define('WP_GROWL_TEXTDOMAIN', 'wp-growl-notifications');
+define('WP_GROWL_LANGUAGES', dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+
 define('WP_GROWL_ASSETS', plugin_dir_url(__FILE__) );
 define('WP_GROWL_RESOURCES', __DIR__ . '/resources/');
 

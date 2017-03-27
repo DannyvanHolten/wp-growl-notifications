@@ -29,10 +29,10 @@ class WPGrowl
 	private function growlTranslations()
 	{
 		return [
-			'hour' => __('Remind me in an Hour', 'wp-growl-notifications'),
-			'day'  => __('Remind me tomorrow', 'wp-growl-notifications'),
-			'week' => __('Remind me next week', 'wp-growl-notifications'),
-			'year' => __('Ignore this message', 'wp-growl-notifications')
+			'hour' => __('Remind me in an Hour', WP_GROWL_TEXTDOMAIN),
+			'day'  => __('Remind me tomorrow', WP_GROWL_TEXTDOMAIN),
+			'week' => __('Remind me next week', WP_GROWL_TEXTDOMAIN),
+			'year' => __('Ignore this message', WP_GROWL_TEXTDOMAIN)
 		];
 	}
 
@@ -60,7 +60,7 @@ class WPGrowl
 	 */
 	public function loadTextDomain()
 	{
-		load_plugin_textdomain('wp-growl-notifications', false, WP_GROWL_ASSETS . '/language');
+		load_plugin_textdomain( WP_GROWL_TEXTDOMAIN, false, WP_GROWL_LANGUAGES);
 	}
 
 	/**
