@@ -20,11 +20,11 @@ In addition to making them more noticable WP Growl also makes it possible to sno
 
 And last but not least, WP Growl is here to fight those annoying notices being abused for advertising! We try to hide any notices being used by plug-ins.
 
-If you notice any abuse or want to get involved visit the [WP Growl GitHub Repository.]https://github.com/DannyvanHolten/wp-growl
+If you notice any abuse or want to get involved visit the [WP Growl GitHub Repository.](https://github.com/DannyvanHolten/wp-growl-notifications)
 
 == Installation ==
 
-The plugin is available from the [WordPress plugin repository]http://www.wordpress.org/plugins/wp-growl
+The plugin is available from the [WordPress plugin repository](http://www.wordpress.org/plugins/wp-growl-notifications)
 
 1. Upload the plugin files to the `/wp-content/plugins/wp-growl-notifications` directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress
