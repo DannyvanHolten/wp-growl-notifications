@@ -43,6 +43,7 @@ As WordPress & WP Growl are continuously in development we like to take a look a
 - [x] Make the snooze menu translatable
 - [x] Add a dutch & german translation
 - [x] Add screenshots for the WordPress repository
+- [ ] Make the screenshots english (doh)
 - [ ] Make it possible to hide / show all notices
 - [ ] Add a button to your profile page to reset snoozed notices.
 - [ ] Add support for WP Rocket
