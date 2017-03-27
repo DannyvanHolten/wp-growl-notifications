@@ -4,7 +4,7 @@ Donate link: http://www.dannyvanholten.com/
 Tags: admin notices, admin, wp-admin, notices, growl, notifications, notification abuse, apple notification, snooze notices, snooze, snooze notification
 Requires at least: 4.6
 Tested up to: 4.7.3
-Stable tag: 0.9
+Stable tag: 1.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -49,8 +49,16 @@ or if you make use of WPackagist
 
 == Changelog ==
 
-= 0.9 =
+= 1.0 =
+Fixed:
+* Readme.txt is now according to WordPress standards
 
+Added:
+* Added screenshots to the WordPress assets
+* Added Dutch, German, Spanish & Portuguese translations.
+
+= 0.9 =
+Added:
 * The repo is set up and all the styling, javascript functions are in order.
 
 == Upgrade Notice ==

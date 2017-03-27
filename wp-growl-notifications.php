@@ -3,7 +3,7 @@
 Plugin Name: WP Growl Notifications
 Plugin URI: https://github.com/DannyvanHolten/wp-growl-notifications
 Description: Show your WordPress admin notices in a growlike / better way, and snooze them whenever you see fit.
-Version: 0.9
+Version: 1.0
 Author: Danny van Holten
 Author URI: http://www.dannyvanholten.com/
 Copyright: Danny van Holten
@@ -14,7 +14,7 @@ if (!defined('ABSPATH')) {
 } // Exit if accessed directly
 
 // Define multiple necessary constants
-define('WP_GROWL_VERSION', 0.9);
+define('WP_GROWL_VERSION', 1.0);
 define('WP_GROWL_TEXTDOMAIN', 'wp-growl-notifications');
 define('WP_GROWL_LANGUAGES', dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 

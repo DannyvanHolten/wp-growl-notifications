@@ -6,8 +6,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## 1.0 - 2017-03-27
+### Fixed
+* Readme.txt is now according to WordPress standards
+
+### Added
+* Added screenshots to the WordPress assets
+* Added Dutch, German, Spanish & Portuguese translations.
+
 ## 0.9 - 2017-03-25
 ### Added
-- The repo is set up and all the styling, javascript functions are in order.
+* The repo is set up and all the styling, javascript functions are in order.
 
 [Unreleased]: https://github.com/dannyvanholten/wp-growl/compare/v0.9...HEAD
