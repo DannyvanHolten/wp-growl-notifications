@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
-## 1.0 - 2017-03-27
+## [1.0] - 2017-03-27
 ### Fixed
 * Readme.txt is now according to WordPress standards
 
@@ -18,4 +18,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 * The repo is set up and all the styling, javascript functions are in order.
 
-[Unreleased]: https://github.com/dannyvanholten/wp-growl/compare/v0.9...HEAD
+[Unreleased]: https://github.com/dannyvanholten/wp-growl/compare/1.0...HEAD
+[1.0]: https://github.com/dannyvanholten/wp-growl/compare/0.9...1.0
