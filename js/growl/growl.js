@@ -18,8 +18,10 @@
 		$wpcontent.prepend('<div class="growl"></div>');
 		var $growl = $('.growl');
 
+		// Initiate growl
 		growl();
 
+		// Also initiate growl when an acf error message appears
 		$.initialize(".acf-error-message", function ()
 		{
 			growl();
@@ -32,22 +34,25 @@
 	function growl()
 	{
 		var $growl = $('.growl');
-		var $notice = $(
-			'.notice:not(.hidden, .inline), #post > .acf-error-message, .update-nag, .message:not(.hidden, .inline), .updated:not(.hidden, .inline), .error:not(.hidden, .inline)');
+		var $notice = $('.notice, #post > .acf-error-message, .update-nag, .message, .updated, .error');
 
 		$notice.each(function ()
 		{
 			var $this = $(this);
 
-			// Compare the trimmed text value with the ones from the database.
-			// We are doing this because admin notices have no consequent selectors
-			if ($this.text().trim() in growl_snoozed_notices) {
-				$this.remove();
-			} else {
-				$this.appendTo($growl);
+			// We don't want to growl inline & hidden notifications
+			if (!$this.hassClass('hidden') && !$this.hasClass('inline')) {
 
-				dismiss($this);
-				snooze($this);
+				// Compare the trimmed text value with the ones from the database.
+				// We are doing this because admin notices have no consequent selectors
+				if ($this.text().trim() in growl_snoozed_notices) {
+					$this.remove();
+				} else {
+					$this.appendTo($growl);
+
+					dismiss($this);
+					snooze($this);
+				}
 			}
 		});
 	}
