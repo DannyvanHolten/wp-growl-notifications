@@ -11,13 +11,13 @@ class WPGrowl
 {
 	public function __construct()
 	{
-		$this->init();
+		$this->hooks();
 	}
 
 	/**
 	 * Make sure all hooks are being executed.
 	 */
-	private function init()
+	private function hooks()
 	{
 		add_action('admin_enqueue_scripts', [$this, 'loadScripts']);
 		add_action('wp_ajax_wp-growl-snooze-notice', [$this, 'snoozeNotice']);
