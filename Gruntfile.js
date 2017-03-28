@@ -144,7 +144,7 @@ module.exports = function (grunt)
 	});
 
 	grunt.registerTask('default',
-		['csscomb', 'postcss:sass', 'sass', 'postcss:css', 'uglify', 'merge_media', 'copy', 'watch']);
+		['csscomb', 'postcss:sass', 'sass', 'postcss:css', 'uglify', 'merge_media', 'watch']);
 
 	grunt.registerTask('optimize', ['postcss:sass', 'uglify']);
 
