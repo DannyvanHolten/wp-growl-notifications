@@ -39,6 +39,8 @@
 		{
 			var $this = $(this);
 
+			// Compare the trimmed text value with the ones from the database.
+			// We are doing this because admin notices have no consequent selectors
 			if ($this.text().trim() in growl_snoozed_notices) {
 				$this.remove();
 			} else {
@@ -57,6 +59,7 @@
 	 */
 	function dismiss($this)
 	{
+		// Not everything needs to be auto dismissable. Mostly because they're not update notices but important messages
 		if (($this.hasClass('is-dismissible') && $this.hasClass('updated') && $this.hasClass('notice')) ||
 			$this.hasClass('acf-error-message')) {
 
@@ -74,9 +77,11 @@
 	 */
 	function snooze($this)
 	{
+		// Not everything needs to be snoozable. Mostly because they are already dismissable
 		if (!$this.hasClass('is-dismissible') && !$this.hasClass('acf-error-message') && !$this.hasClass(
 				'otgs-is-dismissible')) {
 
+			// Add a menu
 			$this.append('<button class="notice-snooze notice-dismiss"></button>');
 			$this.append('<ul class="notice-snooze-menu hidden">' +
 				'<li data-hours="1">' + growlL10n.hour + '</li>' +
@@ -86,11 +91,13 @@
 				'</ul>');
 		}
 
+		// Expand on click
 		$this.find('.notice-snooze').on('click', function ()
 		{
 			$this.find('.notice-snooze-menu').toggleClass('hidden');
 		});
 
+		// Ajax call on click
 		$this.find('.notice-snooze-menu li').on('click', function ()
 		{
 			$.ajax({

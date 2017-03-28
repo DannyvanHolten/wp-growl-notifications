@@ -1,6 +1,9 @@
+/*
+ * Style the snooze button.
+ */
 .notice-snooze {
 	&:before {
-		content: '\f530';
+		content: '\f530'; // dashicons-hidden
 	}
 
 	&-menu {
@@ -64,7 +67,7 @@
 			text-decoration: none;
 
 			&:hover {
-				background-color: #0073aa;
+				background-color: $wp-blue;
 
 				color: #fff;
 			}

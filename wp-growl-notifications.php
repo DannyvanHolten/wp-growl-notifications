@@ -24,4 +24,5 @@ define('WP_GROWL_RESOURCES', __DIR__ . '/resources/');
 // Use composer to autoload our classes
 require_once __DIR__ . '/vendor/autoload.php';
 
+// Initiate WPGRowl!
 new WPGrowl\WPGrowl();

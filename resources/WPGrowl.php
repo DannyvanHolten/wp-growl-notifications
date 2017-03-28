@@ -14,6 +14,9 @@ class WPGrowl
 		$this->init();
 	}
 
+	/**
+	 * Make sure all hooks are being executed.
+	 */
 	private function init()
 	{
 		add_action('admin_enqueue_scripts', [$this, 'loadScripts']);
@@ -50,8 +53,8 @@ class WPGrowl
 		wp_register_script('growl-js', WP_GROWL_ASSETS . 'js/growl.min.js', ['jquery', 'jquery-initialize'],
 			WP_GROWL_VERSION, true);
 
-		wp_localize_script('growl-js', 'growlL10n', $this->growlTranslations());
-		wp_localize_script('growl-js', 'growl_snoozed_notices', $this->snoozedNotices());
+		wp_localize_script('growl-js', 'growlL10n', $this->growlTranslations()); // Localize via our textdomain
+		wp_localize_script('growl-js', 'growl_snoozed_notices', $this->snoozedNotices()); // Get our snoozed notices
 		wp_enqueue_script('growl-js');
 	}
 

@@ -1,3 +1,7 @@
+/*
+ * Style the admin notices in general
+ * And support the same styling for the Advanced custom fields notices
+ */
 .notice,
 .acf-error-message,
 #update-nag,
@@ -7,7 +11,7 @@ div.error {
 	position: relative;
 
 	margin: 0 0 10px 0;
-	padding: 1px 15px !important;
+	padding: 1px 15px !important; // Important because ACF is pretty nasty.
 
 	border-style: solid;
 	border-top-width: 0;

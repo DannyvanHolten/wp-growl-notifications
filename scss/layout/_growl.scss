@@ -1,3 +1,7 @@
+/*
+ * Make sure growl is placed in the top right corner
+ * And displays the necessary notices only after they have been moved to the growl element
+ */
 .growl {
 	position: fixed;
 	z-index: 201;

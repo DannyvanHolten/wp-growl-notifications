@@ -1,3 +1,7 @@
+/*
+ * Style the admin notice dismiss button.
+ * And support the same styling for the Advanced custom fields dismiss button
+ */
 .notice-dismiss,
 .acf-icon.-cancel {
 	position: absolute;
@@ -7,14 +11,14 @@
 	box-sizing: border-box;
 	width: 20px;
 	height: 20px;
-	padding: 15px !important;
+	padding: 15px !important; // Important because ACF is pretty nasty.
 
 	outline: none !important;
-	background: transparent !important;
-	box-shadow: none !important;
+	background: transparent !important; // Important because ACF is pretty nasty.
+	box-shadow: none !important; // Important because ACF is pretty nasty.
 
 	&:before {
-		content: '\f335';
+		content: '\f335'; // dashicons-no-alt
 		position: absolute;
 		z-index: 1;
 		top: 50%;
@@ -39,6 +43,6 @@
 	&:hover:before,
 	&:active:before,
 	&:focus:before {
-		color: $white !important;
+		color: $white !important; // Important because ACF is pretty nasty.
 	}
 }

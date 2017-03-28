@@ -1,7 +1,13 @@
+/*
+ * Import general modules
+ */
 @import 'general';
 @import 'dismiss';
 @import 'snooze';
 
+/*
+ * Import notice specific modules
+ */
 @import 'success';
 @import 'error';
 @import 'warning';
