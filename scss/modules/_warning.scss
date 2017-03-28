@@ -4,7 +4,10 @@
  */
 #update-nag,
 .update-nag,
-.notice-warning {
-	border-color: $warning-color-dark;
-	background-color: $warning-color;
+.notice-warning,
+.notice-warming-alt {
+	&:not(.inline) {
+		border-color: $warning-color-dark;
+		background-color: $warning-color;
+	}
 }

@@ -8,32 +8,31 @@
 .update-nag,
 div.updated,
 div.error {
-	position: relative;
-
-	margin: 0 0 10px 0;
-	padding: 1px 15px !important; // Important because ACF is pretty nasty.
-
-	border-style: solid;
-	border-top-width: 0;
-	border-right-width: 30px;
-	border-bottom-width: 0;
-	border-left-width: 0;
-	border-radius: 5px;
-
-	color: $white;
-
-	pointer-events: initial;
-
-	a {
-		color: $white;
-	}
-
-	p {
-		margin: 10px 0;
-		padding: 0;
-	}
-
 	&:not(.inline) {
 		display: none;
+		position: relative;
+
+		margin: 0 0 10px 0;
+		padding: 1px 15px !important; // Important because ACF is pretty nasty.
+
+		border-style: solid;
+		border-top-width: 0;
+		border-right-width: 30px;
+		border-bottom-width: 0;
+		border-left-width: 0;
+		border-radius: 5px;
+
+		color: $white;
+
+		pointer-events: initial;
+
+		a {
+			color: $white;
+		}
+
+		p {
+			margin: 10px 0;
+			padding: 0;
+		}
 	}
 }
