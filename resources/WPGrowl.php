@@ -63,7 +63,7 @@ class WPGrowl
 	 */
 	public function loadTextDomain()
 	{
-		load_plugin_textdomain( WP_GROWL_TEXTDOMAIN, false, WP_GROWL_LANGUAGES);
+		load_plugin_textdomain(WP_GROWL_TEXTDOMAIN, false, WP_GROWL_LANGUAGES);
 	}
 
 	/**

@@ -20,8 +20,7 @@
     "postcss-scss": "*",
     "postcss-sorting": "^1.6.1",
     "stylefmt": "^4.2.3",
-    "time-grunt": "*",
-    "grunt-wp-deploy": "^1.2.1"
+    "time-grunt": "*"
   },
   "dependencies": {
   }
