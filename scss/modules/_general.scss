@@ -11,7 +11,7 @@ div.error {
 	&:not(.inline) {
 		position: relative;
 
-		//display: none;
+		display: none;
 		margin: 0 0 10px 0;
 		padding: 1px 15px !important; // Important because ACF is pretty nasty.
 
