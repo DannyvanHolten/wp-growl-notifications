@@ -2,7 +2,7 @@
  * Style the admin error notices.
  * And support the same styling for the Advanced custom fields error notices
  */
-.notice:not(.notice-error):not(.notice-warning):not(.notice-warning-alt):not(.notice-warning):not(notice-succes),
+.notice:not(.notice-error):not(.notice-warning):not(.notice-warning-alt):not(.notice-warning):not(notice-succes):not(.updated),
 .notice-info {
 	border-color: $info-color-dark;
 	background-color: $info-color;
