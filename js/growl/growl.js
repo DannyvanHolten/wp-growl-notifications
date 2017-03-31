@@ -41,7 +41,7 @@
 			var $this = $(this);
 
 			// We don't want to growl inline & hidden notifications
-			if (!$this.hassClass('hidden') && !$this.hasClass('inline')) {
+			if (!$this.hasClass('hidden') && !$this.hasClass('inline')) {
 
 				// Compare the trimmed text value with the ones from the database.
 				// We are doing this because admin notices have no consequent selectors
