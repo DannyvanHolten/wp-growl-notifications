@@ -19,7 +19,7 @@
 	div.message,
 	div.updated,
 	div.error {
-		&:not(.inline) {
+		&:not(.inline):not(.hide-if-js) {
 			display: block;
 		}
 	}
