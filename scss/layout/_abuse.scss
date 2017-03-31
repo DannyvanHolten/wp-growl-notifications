@@ -8,3 +8,8 @@
 .smush-notice {
 	display: none !important;
 }
+
+// WPML is not really an abuser. But it has it's own styling for buttons we want to edit.
+.otgs-is-dismissible p [class*="button-"] {
+	margin: 0;
+}
