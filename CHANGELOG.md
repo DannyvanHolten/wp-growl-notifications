@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 ### Changed
 * Improved code commenting in the plugin
+* Improved padding for the update-nag
 
 ## [1.0] - 2017-03-27
 ### Fixed
