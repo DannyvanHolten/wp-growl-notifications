@@ -13,7 +13,7 @@ div.error {
 
 		display: none;
 		margin: 0 0 10px 0;
-		padding: 1px 15px !important; // Important because ACF is pretty nasty.
+		padding: 11px 15px !important; // Important because ACF is pretty nasty.
 
 		border-style: solid;
 		border-top-width: 0;
@@ -39,6 +39,14 @@ div.error {
 		p {
 			margin: 10px 0;
 			padding: 0;
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
 		}
 	}
 }

@@ -11,11 +11,3 @@
 		background-color: $warning-color;
 	}
 }
-
-#update-nag,
-#update-nag {
-	&:not(.inline) {
-		padding-top: 10px !important; // Overwrite the settings of the original notice
-		padding-bottom: 10px !important; // Overwrite the settings of the original notice
-	}
-}
