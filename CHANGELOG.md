@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 ### Changed
+* Changed the color of the warning notices to orange
 * Improved code commenting in the plugin
 * Improved padding for the update-nag
 
